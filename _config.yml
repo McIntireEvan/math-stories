@@ -1,6 +1,6 @@
-title: Math
+title: Stories about Math
 email: mcintire.evan@gmail.com
-#description:
+description: Non-rigorous takes on "higher math"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "math.evanm.dev"
 github_username: mcintireevan
