@@ -37,7 +37,7 @@ In plain english, that is
 
 These are all reasonable requirements for a distance function, and it's not too hard to show that normal Euclidean distance ($$d_e (a, b) = \sqrt{(a_x - b_x)^2 + (a_y - b_y)^2}$$ in the 2d plane) meets all these rules. Try it!
 
-From these axioms, the fact that $$d(x, y) \geq 0$$ follows trivially.
+From these axioms, we can derivate that $$d(x, y) \geq 0$$ in just a few steps.
 
 ## Fun Metric Spaces
 
