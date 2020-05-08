@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-title: Metric Spaces
+title: [WIP] Metric Spaces
 description: What are metric spaces, and why should I care?
 summary: Motivation and introduction for metric spaces, and a few fun examples.
 tags: [geometry]
