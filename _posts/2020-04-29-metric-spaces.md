@@ -9,11 +9,11 @@ tags: [geometry]
 
 ## Intro
 
-In my senior year of college, I took a class[^1] on Euclidean and non-Euclidean Geometry. Euclidean geometry, pictured below, is what we normally think of when doing geometry.
+In my senior year of college, I took a course[^1] on Euclidean and non-Euclidean Geometry. Euclidean geometry, pictured below, is what we normally think of when doing geometry.
 
 (IMAGE HERE)
 
-However, other perfectly valid models of geometry exist, and are collectively referred to as "non-Euclidean". In the course I was in, the first such geometry was Elliptic geometry, which can be thought of as happening on the surface of a sphere. I've illustrated before how that looks, using the same objects as the first picture.
+However, other perfectly valid models of geometry exist, and are collectively referred to as "non-Euclidean". In the course I was in, the first such geometry was Elliptic geometry, which can be thought of as happening on the surface of a sphere. I've illustrated below how that looks, using the same objects as the first picture.
 
 (IMAGE HERE)
 
@@ -45,7 +45,7 @@ In plain english, that is
 
 These are all reasonable requirements for a distance function, and it's not too hard to show that normal Euclidean distance ($$d_e (a, b) = \sqrt{(a_x - b_x)^2 + (a_y - b_y)^2}$$ in the 2d plane) meets all these rules. Try it!
 
-From these axioms, we can derivate that $$d(x, y) \geq 0$$ in just a few steps. I also reccomend that you try showing this!
+From these axioms, we can derive that $$d(x, y) \geq 0$$ in just a few steps. I also reccomend that you try showing this!
 
 (Might include the metrics for ellip/hyperb, but they're kinda obtuse? Or is it that they're unique because of parallel lines, rather than metrics?)[^2],[^3]
 
@@ -55,7 +55,7 @@ From these axioms, we can derivate that $$d(x, y) \geq 0$$ in just a few steps. 
 
 This is a metric that comes up from time to time in computer science. The idea is to imagine the coordinate plane as a city, where you can't cut through alleys/buildings. In order to get from (0, 0) to (1, 1), we have to go up, and to the left in some order.
 
-In a formula, this is for $$p = (p_1, p_2), q = (q_1, q_2)$$, we have the formula $$d_m(p, q) = \mid p_1 - q_1 \mid + \mid p_2 - q_2 \mid$$.
+Putting this as a formula, for $$p = (p_1, p_2), q = (q_1, q_2)$$, we have the metric $$d_m(p, q) = \mid p_1 - q_1 \mid + \mid p_2 - q_2 \mid$$.
 
 Here's some visuals:
 
@@ -65,24 +65,33 @@ Here's some visuals:
 
 The idea for this metric is that all paths must pass through some central source. This is sometimes called the British Rail Metric (or the equivalent for various different countries/cities).
 
-In a formula, this is for $$p = (p_1, p_2), q = (q_1, q_2)$$, we have the formula $$d_m(p, q) = \mid p_1 + q_1 \mid + \mid p_2 + q_2 \mid$$.
+Putting this as a formula, for $$p = (p_1, p_2), q = (q_1, q_2)$$, we have the metric $$d_m(p, q) = \mid p_1 + q_1 \mid + \mid p_2 + q_2 \mid$$.
 
 Here's some visuals:
 
 (SOME IMAGES HERE)
 
+### Levenshtein distance
+
+- strings
+- can we visualize this in an interesting and meaningful way?
+
 ## Why we care about Metric Spaces
 
-- More general thing of topology, I guess?
-- Generalizes convergence and distance.
+These spaces are interesting in their own right, and we can come up with a lot of fun examples. But how do they fit into the bigger picture of math?
+
+As it turns out, by generalizing the idea of distance as a metric, we also get a generalized form of convergence[^4]. This lets us take a lot of ideas from calculus/analysis and apply them to other things. This field is called Differental Geometry.
+
+From a Metric Space, you can easiliy define a Topological Space[^5]. I don't have enough experience with Topology to dive deeper here, but it seems to be an interesting connection that might help if you're interested in Topology.
 
 ### Sources
 
-- a
-- b
+TODO
 
 ### Footnotes
 
 [^1]: We followed "The Four Pillars of Geometry" by John Stillwell
 [^2]: [https://mphitchman.com/geometry/section5-3.html](https://mphitchman.com/geometry/section5-3.html)
 [^3]: [https://mphitchman.com/geometry/section6-3.html](https://mphitchman.com/geometry/section6-3.html)
+[^4]: Convergence being when two values are arbitrarily close to each other.
+[^5]: [https://en.wikipedia.org/wiki/Topological_space](https://en.wikipedia.org/wiki/Topological_space)
