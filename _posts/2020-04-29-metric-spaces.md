@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-title: WIP - Metric Spaces
+title: Metric Spaces - The Basics
 description: What are metric spaces, and why should I care?
 summary: Motivation and introduction for metric spaces, and a few fun examples.
 tags: [geometry]
@@ -112,7 +112,7 @@ As with the previous metrics, we'll go through an example, and ponder what a cir
 
 Despite not being vectors in the coordinate plane like we're used to, we can still define a sense of distance that makes a lot of sense.
 
-If we keep the idea that a dircle is the set of all things that are distance $$r$$ from some center object, then we get a very natural definition of a circle being the set of all strings one edit away from a starting string. If _cat_ is our starting point, it's circle would contain a lot of strings, including _at_, _cats_, _aat_, _bat_, _ecat_, and so on.
+If we keep the idea that a circle is the set of all things that are distance $$r$$ from some center object, then we get a very natural definition of a circle being the set of all strings one edit away from a starting string. If _cat_ is our starting point, it's circle would contain a lot of strings, including _at_, _cats_, _aat_, _bat_, _ecat_, and so on.
 
 ### Normed Spaces
 
