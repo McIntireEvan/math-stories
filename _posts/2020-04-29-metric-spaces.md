@@ -15,11 +15,11 @@ In my senior year of college, I took a course on Euclidean and non-Euclidean Geo
 
 However, other perfectly valid models of geometry exist, and are collectively referred to as "non-Euclidean". In the course I was in, the first such geometry was Elliptic geometry, which can be thought of as happening on the surface of a sphere. I've illustrated below how that looks, using the same objects as the first picture.
 
-![elliptic geometry]({{ site.url }}/assets/metric-spaces/elliptic.png)
+![elliptic geometry]({{ site.baseurl }}/assets/metric-spaces/elliptic.png)
 
 And to complete the geometries we dicussed in my course, we have Hyperbolic geometry, again, drawn below.
 
-![hyperbolic geometry]({{ site.url }}/assets/metric-spaces/hyperbolic.png)
+![hyperbolic geometry]({{ site.baseurl }}/assets/metric-spaces/hyperbolic.png)
 
 In this post, we're not going to get deep into these. I've tried to include some links at the bottom that seem like good resources, if you're interested in learning more.
 
