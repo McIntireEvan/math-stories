@@ -8,3 +8,7 @@ tags: [algebra, graphs]
 ---
 
 In Sophomore year, I did DRP at UMD. partnered w grad student. we decided on expander families. I had no algebra experience, so I got to learn a lot along the way.
+
+- part 0: motivation
+- part 1: groups & cayley graphs
+- part 2: zig-zag ?

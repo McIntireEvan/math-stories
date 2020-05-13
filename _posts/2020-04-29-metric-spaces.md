@@ -106,8 +106,17 @@ $$
 
 If we look at this for a bit, we can figure out that it meets all of our axioms.
 
-- example(s) and vague comment about how so wildly different than geometry yet still shares some notions
-- "circle" could be all strings 1 edit away.
+As with the previous metrics, we'll go through an example, and ponder what a circle becomes in this metric.
+
+![Levenshtein distance example]({{ site.baseurl }}/assets/metric-spaces/l-dist.jpg)
+
+Despite not being vectors in the coordinate plane like we're used to, we can still define a sense of distance that makes a lot of sense.
+
+If we keep the idea that a dircle is the set of all things that are distance $$r$$ from some center object, then we get a very natural definition of a circle being the set of all strings one edit away from a starting string. If _cat_ is our starting point, it's circle would contain a lot of strings, including _at_, _cats_, _aat_, _bat_, _ecat_, and so on.
+
+### Normed Spaces
+
+One important complement to Euclidean Distance and Manahttan distance is Chebyshev distance, defined as $$d_c(x, y) = \text{max}_{i} (\mid x_i - y_i \mid)$$. These three distances correspond to common _norms_ - metrics that have to follow more rules. These extra rules give more structure to the resulting metric space, and we call them _normed metric spaces_.
 
 ## Why we care about Metric Spaces
 
