@@ -43,6 +43,9 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
+  wip:
+    output: true
+    permalink: /wip/:year/:month/:day/:slug
 
 defaults:
   - scope:

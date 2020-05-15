@@ -11,6 +11,8 @@ In my second year of undergrad, I took a small course on visualization using Mat
 
 # Derivatives: A Recap
 
+The derivative of a function $$f$$, written $$\frac{d}{dx} f$$
+
 - derivatives
 - taylor series!
 - If we want the power to be a rational, then we have to fix some stuff first
