@@ -43,9 +43,6 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
-  wip:
-    output: true
-    permalink: /wip/:year/:month/:day/:slug
 
 defaults:
   - scope:
@@ -60,5 +57,10 @@ defaults:
   - scope:
       path: ""
       type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "wip"
     values:
       layout: "post"
