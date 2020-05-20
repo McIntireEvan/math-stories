@@ -7,6 +7,10 @@ In the words of one of my favorite professors, I want to "tell stories" about ma
 
 I want to help create intuition about these subjects, and create explanations that my non-mathematician friends can understand and appreciate.
 
+I'll try to have a new post every other Sunday.
+
+If anything I write is incorrect or misleading, let me know! Make an [issue on Github](https://github.com/McIntireEvan/math-stories/issues) or get in touch [over email](mailto:mcintire.evan@gmail.com).
+
 ### Credits
 
 [Jekyll theme](https://github.com/ronv/sidey)

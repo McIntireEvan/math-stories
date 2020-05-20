@@ -21,7 +21,9 @@ COOL LEAD IN!
 
 Using the derivative, we can write any function as a taylor series. If we make it an infinite sum, it equals the function (I think)
 
-This is key to reason about frac derivs in the way that I studied them. Why?
+This is key to reason about frac derivs in the way that I studied them.
+
+LEAD IN
 
 ## Derivatives of Polynomials
 
@@ -32,6 +34,8 @@ HERE'S THE FORMULA
 so what would it take for $$n$$ to be rational and not integer? we gotta extend the factorial
 
 # Extending the factorial: The Gamma Function
+
+As a reminder, the factorial is defined as $$n! = n * (n - 1) * (n - 2) * \dots * 3 * 2 * 1$$
 
 - Generalizes factorial
 - Show a graphy graph
