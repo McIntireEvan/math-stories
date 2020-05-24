@@ -45,11 +45,11 @@ In plain English, that is
 
 1. A point has distance 0 from itself.
 2. Two points have the same distance from each other.
-3. A direct path will always have the shortest distance. This expression is also known as the Triangle Inequlity.
+3. A direct path will always have the shortest distance. This expression is also known as the Triangle Inequality.
 
 These are all reasonable requirements for a distance function, and it's not too hard to show that normal Euclidean distance ($$d_e (a, b) = \sqrt{(a_x - b_x)^2 + (a_y - b_y)^2}$$ in the 2d plane) follows all these rules. Try it!
 
-From these axioms, we can derive that $$d(x, y) \geq 0$$ in just a few steps. I also reccomend that you try showing this!
+From these axioms, we can derive that $$d(x, y) \geq 0$$ in just a few steps. I also recommend that you try showing this!
 
 We can also define Metrics for Elliptic[^3] and Hyperbolic[^4] geometry, but the definitions are hard to parse and I'd like to focus on other things. Follow the links in the footnotes for good explorations of their metrics.
 
@@ -115,8 +115,6 @@ If we look at this for a bit, we can figure out that it follows all of our axiom
 As with the previous metrics, we'll go through an example, and ponder what a circle becomes in this metric.
 
 ![Levenshtein distance example]({{ site.baseurl }}/assets/metric-spaces/l-dist.jpg)
-
-The two
 
 If we keep the idea that a circle is the set of all things that are distance $$r$$ from some center object, then we get a very natural definition of a circle being the set of all strings one edit away from a starting string. If _cat_ is our starting point, it's circle would contain a lot of strings, including _at_, _cats_, _aat_, _bat_, _ecat_, and so on.
 
