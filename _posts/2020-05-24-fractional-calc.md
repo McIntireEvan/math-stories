@@ -11,7 +11,7 @@ In my second year of college, I took a small course on visualization using Mathe
 
 # Derivatives: A Recap
 
-As a quick recap, the derivative of a function $$f(x)$$ gives the rate of change of $$f$$ with respect to $$x$$. Usually we denote this as $$\frac{d}{dx}$$ or $$f'(x)$$. Since $$f'(x)$$ is also a function, we can take its serivative call the result the second derivative of $$f(x)$$. We can keep repeatedly do this $$n$$ times, and call it the $$n$$th derivative, or a derivative of **order** $$n$$. We write this as $$f^{(n)}(x)$$ or $$\frac{d^n}{dx^n}$$.
+As a quick recap, the derivative of a function $$f(x)$$ gives the rate of change of $$f$$ with respect to $$x$$. Usually we denote this as $$\frac{d}{dx}$$ or $$f'(x)$$. Since $$f'(x)$$ is also a function, we can take its derivative and call the result the second derivative of $$f(x)$$. We can keep repeatedly do this $$n$$ times, and call it the $$n$$th derivative, or a derivative of **order** $$n$$. We write this as $$f^{(n)}(x)$$ or $$\frac{d^n}{dx^n}$$.
 
 At this point, one might wonder if we can generalize derivatives further. The generalization we'll look at is allowing the order to be any real number.
 
@@ -45,6 +45,8 @@ Here, I've plotted $$\Gamma(n)$$ and $$(n-1)!$$. A few things to note:
 Now that we've extended the factorial, let's revisit our formula. Substituting Gamma as appropriate, we come up with $$f^{(a)}(x) = \frac{\Gamma (n + 1)}{\Gamma (n - a + 1)}x^{n-a}$$.
 
 We can go ahead and immediately put it to use. Consider $$f(x) = x^2$$. We'll look at its derivatives for orders in the domain $$[0, 2]$$. I've also plotted the integer-order derivatives we're used to. Before proceeding to the graph below, try to think of what it should look like.
+
+In this graph, the blue line is $$f(x) = x^2$$, the yellow line is $$f'(x) = 2x$$, and the green line is $$f''(x) = 2$$. The blue line is the fractional derivative, varying between orders of 0 and 2.
 
 ![Fractional derivate of x^2 with orders from 0 to 2]({{ site.baseurl }}/assets/fractional-calc/fracx2.gif)
 
@@ -84,17 +86,23 @@ For many functions, with enough terms the Taylor Series is a great approximation
 
 First, let's try $$sin(x)$$, centered about $$x = 0$$. We know[^3] that the Taylor Series is $$x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$. I used Mathematica to plot $$sin(x), cos(x)$$, and the Fractional Derivative using the Taylor Series for $$a \in [0, 2]$$.
 
+In this next graph, the blue line is $$f(x) = sin(x)$$, the yellow line is $$f'(x) = cos(x)$$, and the green line is the fractional derivative as in varies from order 0 to 2.
+
 ![Graph of the fractional derivatives of sin(x)]({{ site.baseurl }}/assets/fractional-calc/sin.gif)
 
 We know that there's just a phase shift of $$\frac{\pi}{2}$$ between sine and cosine, so it makes a lot of sense that the fractional derivative also shows a clear phase shift.
 
-Next, let's try this for $$e^{2x}$$. The Taylor Series is $$1 + 2x + 2x^2 + 4\frac{x^6}{3} + \cdots $$.
+Next, let's try this for $$e^{2x}$$. The Taylor Series is $$1 + 2x + 2x^2 + 4\frac{x^6}{3} + \cdots $$. We can do the same process and graph it.
+
+Here, we have $$f(x) = e^{2x}$$ in blue, $$f'(x) = 2e^{2x} in yellow, and $$f''(x) = 4e^{2x}$$ in green. We then have the fractional derivative in red, again from orders 0 to 2$$.
 
 ![Graph of the fractional derivatives of sin(x)]({{ site.baseurl }}/assets/fractional-calc/exp.gif)
 
 Once again, we don't get any surprises.
 
 Let's see where this all breaks down. Taylor Series have issues representing $$ln(x)$$, and becomes more inaccurate the more terms in the Taylor Series. A picture is worth a thousand words, so let's take a look.
+
+We've plotted $$f(x) = ln(x)$$ in blue, and $$f'(x) = 1/x$$ in yellow. In green, we have the fractional derivative from orders 0 to 2 as usual.
 
 ![Graph of the fractional derivatives of ln(x)]({{ site.baseurl }}/assets/fractional-calc/ln.gif)
 
@@ -148,8 +156,8 @@ In calculus, much of what we do is "local". That is, a derivative at a point wil
 
 Before I wrote this post, I wrote mathematica and sage packages that implement the Riemann–Liouville differentegral. Try them out, and feel free to contribute if there are any issues.
 
-- SageMath
-- Mathematica
+- [SageMath](https://github.com/McIntireEvan/DifferIntegral-Sage)
+- [Mathematica](https://github.com/McIntireEvan/DifferIntegral-Mathematica)
 
 # Sources
 
